@@ -1,0 +1,158 @@
+@media (max-width: 768px)  {  
+    nav div {
+        align-items: flex-start;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .col-md-6{
+        margin-bottom: 20px;
+    }
+}
+
+body {
+    background: linear-gradient(to right,#000000, #003747);
+    min-width: 320px;
+    color: white;
+}
+
+.container h1 {
+    color: white;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313131;
+    padding: 15px 30px;
+}
+
+nav > a {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:#00c3ff;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+    transition: 0.3s;
+}
+
+.card:hover {
+    color:#005a75;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: 0.5s;
+}
+
+.card:hover::before{
+    left: 100%;
+}
+
+.card h3,
+.card p{
+    transition: 0.3s;
+}
+
+.card:hover h3 {
+    color: #00c3ff;
+}
+
+.card:hover p {
+    color: #ccc;
+}
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.about p{
+    margin-bottom: 15px;
+    color: #ccc
+}
+
+.about h2{
+    color: white;
+}
+
+.about {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+    margin-top: 5px;
+}
+
+.about.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact p{
+    margin-bottom: 15px;
+    color: #ccc
+}
+
+.contact h2{
+    color: white;
+}
+
+.contact {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+    margin-top: 5px;
+}
+
+.contact.show {
+    opacity: 1;
+    transform: translateY(0);
+}

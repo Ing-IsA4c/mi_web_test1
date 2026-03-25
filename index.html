@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Umaña</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <nav>
+    <a href="index.html">Isaac Umaña | Dev & Design</a>
+
+    <div>
+      <a href="index.html">Inicio</a>
+      <a href="/html/diseno.html">Diseño Gráfico</a>
+      <a href="/html/desarrollo.html">Programación</a>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-5">   
+  <h1>¿Qué servicio necesitas?</h1>
+
+  <div class="row mt-4">
+
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h3>🎨 Diseño Gráfico</h3>
+        <p>Branding, camisetas, identidad visual</p>
+        <a href="/html/diseno.html" class="btn btn-dark">Ver más</a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h3>💻 Programación</h3>
+        <p>Desarrollo web, sistemas y soluciones</p>
+        <a href="/html/desarrollo.html" class="btn btn-primary">Ver más</a>
+      </div>
+    </div>
+
+  <section class="about">
+    <h2>Sobre mí</h2>
+
+    <p>Hola, mi nombre es Isaac Umaña. Soy diseñador gráfico y estudiante de ingeniería en sistemas.</p>
+
+    <p>Me especializo en diseño textil (merchandising), branding, publicidad y desarrollo de soluciones web funcionales.</p>
+
+    <p>Combino creatividad y tecnología para ayudar a marcas a crecer.</p>
+
+    <script>
+        const about = document.querySelector('.about');
+
+        window.addEventListener('scroll', () => {
+          const position = about.getBoundingClientRect().top;
+          const screenHeight = window.innerHeight;
+
+          if (position < screenHeight - 100) {
+            about.classList.add('show');
+          }
+        });
+    </script>
+  </section>
+
+  <section class="contact">
+    <h2>Contactos</h2>
+    <p>Puedes contactarme a traves de:</p>
+    <p>📧 isaacufonseca2@gmail.com 📱 WhatsApp 📸 @inkthreads</p>
+
+    <script>
+        const contact = document.querySelector('.contact');
+
+        window.addEventListener('scroll', () => {
+          const position = contact.getBoundingClientRect().top;
+          const screenHeight = window.innerHeight;
+
+          if (position < screenHeight - 100) {
+            contact.classList.add('show');
+          }
+        });
+    </script>
+  </section>
+
+  </div>
+</div>
+</body>
+</html>
