@@ -19,6 +19,7 @@ main{
 }
 
 body {
+    margin: 0;
     background: linear-gradient(to right,#000000, #003747);
     min-width: 320px;
     color: white;
@@ -165,6 +166,7 @@ nav div {
 }
 
 .footer {
+    width: 100%;
     background-color: #111;
     text-align: center;
     padding: 20px;
