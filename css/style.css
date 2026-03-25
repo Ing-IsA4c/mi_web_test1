@@ -109,10 +109,6 @@ nav div {
     transition: 0.3s;
 }
 
-.card:hover {
-    color:E0E006;
-}
-
 .card::before{
     content: "";
     position: absolute;
@@ -134,7 +130,7 @@ nav div {
 }
 
 .card:hover h3 {
-    color: ##E0E006;
+    color: #E0E006;
 }
 
 .card:hover p {
@@ -148,6 +144,13 @@ nav div {
 .btn:hover {
     transform: scale(1.05);
 }
+
+.btn-primary {
+    background-color: #E0E006 !important;
+    border-color: #E0E006 !important;
+    color: black !important;
+}
+
 .about,
 .contact {
     text-align: center;
@@ -164,13 +167,11 @@ nav div {
     transform: translateY(0);
 }
 
-
 .about h2,
 .contact h2 {
     color: white;
     margin-bottom: 20px;
 }
-
 
 .about p,
 .contact p {
