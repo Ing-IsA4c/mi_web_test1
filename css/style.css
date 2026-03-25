@@ -123,47 +123,35 @@ nav div {
 .btn:hover {
     transform: scale(1.05);
 }
-
-.about p{
-    margin-bottom: 15px;
-    color: #ccc
-}
-
-.about h2{
-    color: white;
-}
-
-.about {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-    margin-top: 5px;
-}
-
-.about.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.contact p{
-    margin-bottom: 15px;
-    color: #ccc
-}
-
-.contact h2{
-    color: white;
-}
-
+.about,
 .contact {
+    text-align: center;
+    padding: 40px 20px;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
     margin-top: 5px;
 }
 
+.about.show,
 .contact.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+.about h2,
+.contact h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.about p,
+.contact p {
+    color: #ccc;
+    margin: 0 auto 15px;
+    max-width: 600px;
 }
 
 .footer {
