@@ -156,3 +156,16 @@ nav div {
     opacity: 1;
     transform: translateY(0);
 }
+
+.footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #aaa;
+    font-size: 14px;
+}
