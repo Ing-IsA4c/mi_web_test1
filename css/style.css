@@ -82,7 +82,7 @@ nav a {
 }
 
 nav a:hover {
-    color:#00c3ff;
+    color:#E0E006;
 }
 
 nav div {
@@ -110,7 +110,7 @@ nav div {
 }
 
 .card:hover {
-    color:#005a75;
+    color:E0E006;
 }
 
 .card::before{
