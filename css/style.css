@@ -23,6 +23,11 @@
     }
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto.ttf') format('truetype');
+}
+
 .background-grid {
     position: fixed;
     top: 0;
@@ -52,6 +57,7 @@ body {
     display: flex;           
     flex-direction: column; 
     min-height: 100vh; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .container h1 {
